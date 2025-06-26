@@ -1,0 +1,12 @@
+[leafs]
+leaf-01 ansible_host=10.27.215.116 loopback_ip=10.0.0.1 loopback_ipv6=2001:db8::10:0:0:1
+leaf-02 ansible_host=10.27.2.16 loopback_ip=10.0.0.2 loopback_ipv6=2001:db8::10:0:0:2
+
+[spines]
+spine-01 ansible_host=10.27.3.123 loopback_ip=10.0.0.101 loopback_ipv6=2001:db8::10:0:0:101 rr=true
+spine-02 ansible_host=10.27.2.23 loopback_ip=10.0.0.102 loopback_ipv6=2001:db8::10:0:0:102
+
+[all:vars]
+ansible_user=cumulus
+ansible_ssh_pass=cumulus
+ansible_become=true
